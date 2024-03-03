@@ -28,7 +28,6 @@ class FlexibleReportsController extends Controller
         abort_if(Gate::denies('report_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         if ($request->ajax()) {
-            // $query = Report::with(['roles:title', 'team'])->select( sprintf('%s.*', (new Report())->table));
             $query = Report::with(['roles:title',])->select('id','name')->get();
             $table = Datatables::of($query);
 
@@ -101,7 +100,7 @@ class FlexibleReportsController extends Controller
 
         $roles = Role::pluck('title', 'id');
 
-        $report->load('roles', 'team');
+        $report->load('roles'/*, 'team'*/);
 
         return view('flexibleReports::edit', compact('report', 'roles'));
     }
@@ -118,7 +117,7 @@ class FlexibleReportsController extends Controller
     {
         abort_if(Gate::denies('report_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $report->load('roles', 'team');
+        $report->load('roles'/*, 'team'*/);
 
         return view('flexibleReports::show', compact('report'));
     }
