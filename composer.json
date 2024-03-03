@@ -19,6 +19,6 @@
         "koolreport/cloudexport": "^4.2",
         "koolreport/core": "^6.2",
         "koolreport/laravel": "^2.0",
-		""chrome-php/chrome": "*"
+		"chrome-php/chrome": "*"
     }
 }
