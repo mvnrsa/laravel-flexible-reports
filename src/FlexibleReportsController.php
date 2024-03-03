@@ -16,7 +16,6 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Yajra\DataTables\Facades\DataTables;
 use mvnrsa\FlexibleReports\App\Utils\DataSetFactory;
-use App\Utils\pdfUtils;
 use \koolreport\processes\Group;
 use \koolreport\processes\ColumnMeta;
 
