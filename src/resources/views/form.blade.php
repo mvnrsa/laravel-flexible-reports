@@ -44,11 +44,11 @@
 						<tr>
 							<td>&nbsp;</td>
 							<td>
-								<button type="submit" title='Web' onclick='setFormat("html");' class="btn btn-outline-info px-4"><i class='fal fa-file-code'></i></button>
-								<button type="submit" title='PDF' onclick='setFormat("pdf");' class="btn btn-outline-info px-4"><i class='fal fa-file-pdf'></i></button>
-								<button type="submit" title='Excel' onclick='setFormat("xls");' class="btn btn-outline-info px-4"><i class='fal fa-file-excel'></i></button>
-								<button type="submit" title='ODS' onclick='setFormat("ods");' class="btn btn-outline-info px-4"><i class='fal fa-file-spreadsheet'></i></button>
-								<button type="submit" title='CSV' onclick='setFormat("csv");' class="btn btn-outline-info px-4"><i class='fal fa-file-csv'></i></button>
+								<button type="submit" title='Web' onclick='setFormat("html");' class="btn btn-outline-info px-4"><i class='fa fal fa-file-code'></i></button>
+								<button type="submit" title='PDF' onclick='setFormat("pdf");' class="btn btn-outline-info px-4"><i class='fa fal fa-file-pdf'></i></button>
+								<button type="submit" title='Excel' onclick='setFormat("xls");' class="btn btn-outline-info px-4"><i class='fa fal fa-file-excel'></i></button>
+								<button type="submit" title='ODS' onclick='setFormat("ods");' class="btn btn-outline-info px-4"><i class='fa fal fa-file-spreadsheet'></i></button>
+								<button type="submit" title='CSV' onclick='setFormat("csv");' class="btn btn-outline-info px-4"><i class='fa fal fa-file-csv'></i></button>
 							</td>
 						</tr>
 	                </tbody>
