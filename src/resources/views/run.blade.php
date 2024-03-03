@@ -47,7 +47,7 @@
 				<small>
 					{{ trans('flexibleReports::reports.prepared_by') }}:
 					{{ Auth::user()->name }} -
-					{{ Auth::user()->now->format(trans('flexibleReports::reports.report_date_format')) }}
+					{{ \Carbon\Carbon::now()->format(trans('flexibleReports::reports.report_date_format')) }}
 				</small>
 				@if (count($param_labels) > 0)
 					<br />

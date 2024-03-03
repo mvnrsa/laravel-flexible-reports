@@ -175,7 +175,7 @@ class FlexibleReportsController extends Controller
 			$method = $methods[$format];
 
 			$filename = ucfirst(Str::camel($report->name)) . "_" .
-					Auth::user()->now->format("Ymd_His") . ".$format";
+					\Carbon\Carbon::now()->format("Ymd_His") . ".$format";
 
 			$tmpfile = storage_path("tmp/$filename");
 			$dsf->run()->$method()->saveAs($tmpfile);
@@ -223,7 +223,7 @@ class FlexibleReportsController extends Controller
 			unlink($pdf_file);
 
 			$filename = ucfirst(Str::camel($report->name)) . "_" .
-						Auth::user()->now->format("Ymd_His") . ".pdf";
+						\Carbon\Carbon->now()->format("Ymd_His") . ".pdf";
 			return response($contents)
 						->header('Content-Type', "application/pdf")
 						->header("Content-disposition","attachment; filename=\"$filename\"");
