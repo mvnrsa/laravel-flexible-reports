@@ -19,7 +19,6 @@ use mvnrsa\FlexibleReports\App\Utils\DataSetFactory;
 use App\Utils\pdfUtils;
 use \koolreport\processes\Group;
 use \koolreport\processes\ColumnMeta;
-use App\Classes\LastViewed;
 
 class FlexibleReportsController extends Controller
 {
@@ -143,8 +142,6 @@ class FlexibleReportsController extends Controller
 		$report = $this->getReport($report);
 
 		abort_unless($report->gate(), 403);
-
-		LastViewed::add($report);
 
         return view('flexibleReports::form', compact('report'));
 	}
