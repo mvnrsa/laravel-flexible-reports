@@ -4,22 +4,16 @@ namespace mvnrsa\FlexibleReports\App\Models;
 use Str;
 use Carbon\Carbon;
 use \DateTimeInterface;
-use App\Traits\Auditable;
-use App\Traits\MultiTenantModelTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Auth;
-use Wildside\Userstamps\Userstamps;
 use App\Models\Role;
 use App\Models\Team;
 
 class Report extends Model
 {
     use SoftDeletes;
-    use MultiTenantModelTrait;
-    use Auditable;
-    use Userstamps;
     use HasFactory;
 
     public $table = 'reports';
