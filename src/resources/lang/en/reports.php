@@ -3,6 +3,7 @@
         'add'            => 'Add',
         'edit'           => 'Edit',
         'list'           => 'List',
+        'show'           => 'Show',
         'save'           => 'Save',
         'search'         => 'Search',
         'create'         => 'Create',

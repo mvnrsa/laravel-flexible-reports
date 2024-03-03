@@ -320,10 +320,10 @@ class FlexibleReportsController extends Controller
 	{
 		if (is_object($report))
 			return $report;
-		elseif (is_string($report))
-			$report = Report::where('name',$report)->first();
-		else
+		elseif(is_numeric($report))
 			$report = Report::find($report);
+		else
+			$report = Report::where('name',$report)->first();
 
 		if (!$report)
 			abort(404);
