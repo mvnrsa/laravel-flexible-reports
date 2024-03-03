@@ -1,0 +1,25 @@
+{
+    "name": "mvnrsa/laravel-flexible-reports",
+    "description": "Flexible Reports for Laravel Projects",
+	"version": "0.1.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "mvnrsa\\FlexibleReports\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marnus van Niekerk",
+            "email": "laravel@mjvn.net"
+        }
+    ],
+    "repositories":[
+      {"type":"composer","url":"https://repo.koolreport.com"}
+    ],
+    "require": {
+        "koolreport/cloudexport": "^4.1",
+        "koolreport/core": "^5.5",
+        "koolreport/laravel": "^2.0"
+    }
+}
