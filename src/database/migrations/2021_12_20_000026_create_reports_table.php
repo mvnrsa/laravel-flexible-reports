@@ -17,8 +17,6 @@ class CreateReportsTable extends Migration
 			$table->longText('charts')->nullable();
 			$table->string('pre_function')->nullable();
 			$table->string('post_function')->nullable();
-            $table->unsignedBigInteger('team_id')->nullable();
-            $table->foreign('team_id', 'team_fk')->references('id')->on('teams');
             $table->timestamps();
             $table->softDeletes();
         });

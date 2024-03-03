@@ -16,7 +16,7 @@ class Report extends Model
     use SoftDeletes;
     use HasFactory;
 
-    public $table = 'reports';
+    public $table = 'flexible_reports';
 
     protected $dates = [
         'created_at',
