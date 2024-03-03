@@ -1,13 +1,13 @@
 <?php
 namespace mvnrsa\FlexibleReports\App\Utils;
 
-// use \koolreport\excel\ExportHandler;
+use \koolreport\excel\ExportHandler;
 
 class DataSetFactory extends \koolreport\KoolReport
 {
     use \koolreport\laravel\Friendship;
-    // use \koolreport\excel\ExcelExportable;
-    // use \koolreport\excel\CSVExportable;
+    use \koolreport\excel\ExcelExportable;
+    use \koolreport\excel\CSVExportable;
 
 	// The connection to use
 	protected $connection = "mysql";
