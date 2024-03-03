@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "koolreport/cloudexport": "^4.1",
-        "koolreport/core": "^5.5",
+        "koolreport/cloudexport": "^4.2",
+        "koolreport/core": "^6.2",
         "koolreport/laravel": "^2.0"
     }
 }
